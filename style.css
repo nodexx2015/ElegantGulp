@@ -1,0 +1,132 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+header {
+    height: 700px;
+    background: url(img/index/head_bg.jpg) no-repeat center;
+    background-size: 100%;
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    padding-top: 17px;
+    margin: 0px auto;
+}
+.logo {
+    margin-left: 48px;
+}
+header h1 {
+color: #ffffff;
+font-family: 'Open Sans', sans-serif;
+font-size: 80px;
+line-height: 60px;
+letter-spacing: 4px;
+text-align: center;
+font-weight: 300;
+}
+header h1>span {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+}
+menu {
+    margin-right: 48px;
+    position: relative;
+}
+.menu-wrap {
+    position: absolute;
+    right: 0;
+    width: 71px;
+    overflow: hidden;
+    transition: all ease 1.5s;
+}
+#bar, label .fa-times {
+    display: none;
+}
+.menu-items {
+    opacity: 0;
+    width: 50px;
+    overflow: hidden;
+    transition: all ease 1.5s;
+}
+label {
+    display: inline-block;
+    cursor: pointer;
+    display: flex;
+}
+.menu-title {
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    color: #ffffff;
+    padding: 0px 4px;
+    width: 50px;
+    transition: all ease 1.5s;
+}
+label i {
+    color: #ffffff;
+}
+label .fa-bars, label .fa-times {
+    line-height: 23px;
+}
+.menu-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menu-items__item a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(112, 109, 109,0.9);
+    display: inline-block;
+    width: 170px;
+    border: solid 1px gray;
+    padding: 5px 0px 5px 10px;
+    font-family: "Open Sans";
+    font-size: 12px;
+    box-sizing: border-box;
+    transition: width ease 1.5s;
+}
+.menu-items__item a:hover {
+    background-color: gray;
+}
+#bar:checked + .menu-wrap {
+    width: 220px;
+    transition: all ease 1.5s;
+}
+#bar:checked + .menu-wrap .menu-title {
+    background-color: rgb(94, 90, 90);
+    line-height: 30px;
+    width: 170px;
+    height: 30px;
+    box-sizing: border-box;
+    transition: width ease 1.5s;
+}
+#bar:checked + .menu-wrap .fa-bars {
+    display: none;
+}
+#bar:checked + .menu-wrap .fa-times {
+    display: inline-block;
+    background-color: yellow;
+    color: black;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+#bar:checked + .menu-wrap .menu-items {
+    opacity: 1;
+    width: 170px;
+    transition: all ease 1.5s;
+}
+.lines {
+    max-width: 540px;
+    margin: 0 auto;
+}
+header h1 {
+    position: relative;
+    bottom: 330px;
+}
