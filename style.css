@@ -317,12 +317,12 @@ label {
 
 /* ---------------ABOUT YOURSELF----------------- */
 
-.box-about-yourself {
+.section {
     text-align: center;
     padding: 81px 5px 163px;
 }
 
-.box-about-yourself h2 {
+.section h2 {
     color: #d4af37;
     font-family: "Open Sans";
     font-size: 13px;
@@ -332,7 +332,7 @@ label {
     margin: 0;
 }
 
-.box-about-yourself h3 {
+.section h3 {
     opacity: 0.7;
     color: #021725;
     font-family: "Open Sans";
@@ -341,9 +341,10 @@ label {
     line-height: 60px;
     margin: 21px 0px 53px;
     letter-spacing: 2.2px;
+    text-transform: capitalize;
 }
 
-.box-about-yourself .text {
+.section .text {
     max-width: 760px;
     color: #021725;
     font-family: "Open Sans";
@@ -354,7 +355,7 @@ label {
     margin: 0px auto;
 }
 
-.box-about-yourself button {
+.section button {
     width: 238px;
     border: 1px solid #000000;
     background: none;
@@ -365,27 +366,28 @@ label {
     font-weight: 300;
     line-height: 32px;
     letter-spacing: 0.7px;
+    text-transform: capitalize;section
 }
 
 @media all and (max-width: 750px) {
-    .box-about-yourself h2 {
+    .section h2 {
         font-size: 28px;
         font-weight: 400;
     }
 
-    .box-about-yourself h3 {
+    .section h3 {
         font-size: 90px;
         margin: 38px auto 83px;
         line-height: 92px;
     }
 
-    .box-about-yourself .text {
+    .section .text {
         max-width: 674px;
         font-size: 27px;
         line-height: 52px;
     }
 
-    .box-about-yourself button {
+    .section button {
         width: 452px;
         margin-top: 68px;
         font-size: 27px;
@@ -396,26 +398,26 @@ label {
 }
 
 @media all and (max-width: 640px) {
-    .box-about-yourself {
+    .section {
         padding: 40px 5px 90px;
     }
 
-    .box-about-yourself h2 {
+    .section h2 {
         font-size: 25px;
     }
 
-    .box-about-yourself h3 {
+    .section h3 {
         font-size: 60px;
         margin: 20px auto 50px;
         line-height: 80px;
     }
 
-    .box-about-yourself .text {
+    .section .text {
         font-size: 21px;
         line-height: 40px;
     }
 
-    .box-about-yourself button {
+    .section button {
         width: 365px;
         margin-top: 49px;
         font-size: 21px;
@@ -423,26 +425,89 @@ label {
 }
 
 @media all and (max-width: 455px) {
-    .box-about-yourself h2 {
+    .section h2 {
         font-size: 18px;
     }
 
-    .box-about-yourself h3 {
+    .section h3 {
         font-size: 37px;
         margin: 10px auto 30px;
         line-height: 60px;
     }
 
-    .box-about-yourself .text {
+    .section .text {
         font-size: 15px;
         line-height: 30px;
     }
 
-    .box-about-yourself button {
+    .section button {
         width: 271px;
         margin-top: 45px;
         font-size: 15px;
         line-height: 50px;
     }
+}
 
+/* --------------Show work --------------*/
+
+.section_position {
+    padding: 0px 0px 162px;
+}
+.section__title-work_position {
+    margin: 22px 81px;
+}
+.section ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.section li {
+    margin: 2px;
+    width: 317px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+.section li:nth-child(1) {
+    background-image: url(img/index/example1_img.jpg);
+}
+.section li:nth-child(2) {
+    background-image: url(img/index/example2_img.jpg);
+}
+.section li:nth-child(3) {
+    background-image: url(img/index/example3_img.jpg);
+}
+.section li:nth-child(4) {
+    background-image: url(img/index/example4_img.jpg);
+}
+.section li:nth-child(5) {
+    background-image: url(img/index/example5_img.jpg);
+}
+.section li:nth-child(6) {
+    background-image: url(img/index/example6_img.jpg);
+}
+.section li:nth-child(7) {
+    background-image: url(img/index/example7_img.jpg);
+}
+.section li:nth-child(8) {
+    background-image: url(img/index/example8_img.jpg);
+}
+.section li>img {
+    display: none;
+}
+@media all and (max-width: 750px) {
+    .section li {
+        width: auto;
+        height: auto;
+        background-image: none;
+    }
+    
+.section li>img {
+        max-width: 100%;
+        height: auto;
+    display: inline-block;
+}
 }
