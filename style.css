@@ -526,6 +526,9 @@ label {
     background-color: #f9f9f9;
     text-align: left;
 }
+.mob-card {
+    display: none;
+}
 .card-inner {
     padding: 0px 21px 48px 16px;
 }
@@ -556,4 +559,36 @@ font-size: 13px;
 font-weight: 300;
 line-height: 23px;
 letter-spacing: 0.65px;
+}
+@media all and (max-width: 759px) {
+    .cards {
+        display: block;
+    }
+    .card {
+        margin: 0 auto 59px;
+        max-width: 680px;
+    }
+    .card img:nth-child(1) {
+        display: none;
+    }
+    .mob-card {
+        display: inline-block;
+    }
+    .card h4 {
+        margin: 37px 0px 39px;
+        font-size: 29px;
+    }
+    .card h5 {
+        font-size: 40px;
+        margin-bottom: 60px;
+    }
+    .card p {
+        font-size: 29px;
+        line-height: 41px;
+        margin: 0;
+    }
+    
+    .card-inner {
+    padding: 0px 77px 90px 31px;
+    }
 }
