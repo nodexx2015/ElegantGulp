@@ -432,7 +432,7 @@ label {
     .section h3 {
         font-size: 37px;
         margin: 10px auto 30px;
-        line-height: 60px;
+        line-height: 45px;
     }
 
     .section .text {
@@ -526,6 +526,10 @@ label {
     background-color: #f9f9f9;
     text-align: left;
 }
+.card img {
+    max-width: 100%;
+    /* height: auto; */
+}
 .mob-card {
     display: none;
 }
@@ -590,5 +594,23 @@ letter-spacing: 0.65px;
     
     .card-inner {
     padding: 0px 77px 90px 31px;
+    }
+}
+@media all and (max-width: 500px) {
+    .card h4 {
+        margin: 25px 0px;
+        font-size: 18px;
+    }
+    .card h5 {
+        font-size: 37px;
+        margin-bottom: 30px;
+        line-height: 38px;
+    }
+    .card p {
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .card-inner {
+        padding: 0px 35px 50px 15px;
     }
 }
