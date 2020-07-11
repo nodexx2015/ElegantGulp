@@ -319,9 +319,10 @@ label {
 
 .section {
     text-align: center;
-    padding: 81px 5px 163px;
 }
-
+.who_we {
+    margin: 81px 0px 0px;
+}
 .section h2 {
     color: #d4af37;
     font-family: "Open Sans";
@@ -329,7 +330,6 @@ label {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.65px;
-    margin: 0;
 }
 
 .section h3 {
@@ -366,13 +366,16 @@ label {
     font-weight: 300;
     line-height: 32px;
     letter-spacing: 0.7px;
-    text-transform: capitalize;section
+    text-transform: capitalize;
 }
 
 @media all and (max-width: 750px) {
     .section h2 {
         font-size: 28px;
         font-weight: 400;
+    }
+    .who_we {
+        margin: 153px 0px 0px;
     }
 
     .section h3 {
@@ -398,8 +401,8 @@ label {
 }
 
 @media all and (max-width: 640px) {
-    .section {
-        padding: 40px 5px 90px;
+    .who_we {
+        margin: 100px 0px 0px;
     }
 
     .section h2 {
@@ -450,8 +453,8 @@ label {
 
 /* --------------Show work --------------*/
 
-.section_position {
-    padding: 0px 0px 162px;
+.what_we {
+    margin: 163px 0px 0px;
 }
 .section__title-work_position {
     margin: 22px 81px;
@@ -499,7 +502,15 @@ label {
     display: none;
 }
 @media all and (max-width: 750px) {
-    .section li {
+    .what_we {
+        margin: 303px 0px 0px;
+    }
+    .section ul>li:nth-child(odd) {
+        width: auto;
+        height: auto;
+        background-image: none;
+    }
+    .section ul>li:nth-child(even) {
         width: auto;
         height: auto;
         background-image: none;
@@ -508,13 +519,21 @@ label {
 .section li>img {
         max-width: 100%;
         height: auto;
-    display: inline-block;
+        display: inline-block;
 }
+}
+@media all and (max-width: 640px) {
+    .who_we, .we_are {
+        margin: 150px 0px 0px;
+    }
 }
 
 
 /* *******WHO WE ARE**************** */
 
+.we_are {
+    margin: 162px 0px 0px;
+}
 .cards {
     display: flex;
     justify-content: space-between;
@@ -528,7 +547,6 @@ label {
 }
 .card img {
     max-width: 100%;
-    /* height: auto; */
 }
 .mob-card {
     display: none;
@@ -565,6 +583,9 @@ line-height: 23px;
 letter-spacing: 0.65px;
 }
 @media all and (max-width: 759px) {
+    .we_are {
+        margin: 306px 0px 0px;
+    }
     .cards {
         display: block;
     }
