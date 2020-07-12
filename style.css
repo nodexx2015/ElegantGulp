@@ -971,9 +971,11 @@ iframe {
         flex-direction: column;
         align-items: center;
     }
+
     .inner-contact .row:first-child {
         padding-bottom: 0;
     }
+
     .inner-contact h4 {
         font-size: 20px;
         margin-bottom: 0;
@@ -984,11 +986,69 @@ iframe {
         line-height: 38px;
         margin-bottom: 30px;
     }
-    .location, .phone, .fax, .email {
+
+    .location,
+    .phone,
+    .fax,
+    .email {
         max-width: 265px;
     }
 }
 
+footer {
+    background-color: #eeeeee;
+    height: 93px;
+    display: flex;
+}
+
+.foot-wrap {
+    display: flex;
+    margin: auto;
+    width: 746px;
+    justify-content: space-between;
+    color: #505d68;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 34px;
+}
+
+@media all and (max-width: 750px) {
+    footer {
+        height: 230px;
+    }
+
+    .foot-wrap {
+        display: block;
+        width: auto;
+        opacity: 0.7;
+        color: #323d43;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 48px;
+    }
+}
+
+@media all and (max-width: 640px) {
+    footer {
+        height: 140px;
+    }
+
+    .foot-wrap {
+        font-size: 20px;
+        line-height: 38px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    footer {
+        height: 90px;
+    }
+    .foot-wrap {
+        font-size: 13px;
+        line-height: 21px;
+    }
+}
 
 @media all and (max-width: 640px) {
 
