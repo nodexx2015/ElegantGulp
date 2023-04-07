@@ -1,0 +1,85 @@
+@import "_mixins.scss";
+@import "fonts.scss";
+@import "index.scss";
+$multilevel-accordion-bg: #4d5158;
+$multilevel-accordion-sub-bg: #35383d;
+$multilevel-accordion-separator: #41444a;
+
+.txtx {
+  font-size: 20px;
+
+  @include breakpoint(600px) {
+    color: gray;
+    font-style: italic;
+    font-size: large;
+  }
+}
+
+.multilevel-accordion-menu {
+  .is-accordion-submenu-parent a {
+    background: $multilevel-accordion-bg;
+  }
+
+  .is-accordion-submenu a {
+    background: $multilevel-accordion-sub-bg;
+  }
+
+  .sublevel-1 {
+    text-indent: 0rem + 1;
+  }
+
+  .sublevel-2 {
+    text-indent: 0rem + 2;
+  }
+
+  .sublevel-3 {
+    text-indent: 0rem + 3;
+  }
+
+  .sublevel-4 {
+    text-indent: 0rem + 4;
+  }
+
+  .sublevel-5 {
+    text-indent: 0rem + 5;
+  }
+
+  .sublevel-6 {
+    text-indent: 0rem + 6;
+  }
+
+  a {
+    color: white;
+    box-shadow: inset 0 -1px $multilevel-accordion-separator;
+
+    &::after {
+      border-color: white transparent transparent;
+    }
+  }
+
+  .menu>li:not(.menu-text)>a {
+    padding: 1.2rem 1rem;
+  }
+}
+
+.multilevel-accordion-menu .is-accordion-submenu-parent[aria-expanded="true"] a.subitem::before {
+  content: "\f016";
+  font-family: FontAwesome;
+  margin-right: 1rem;
+}
+
+.multilevel-accordion-menu .is-accordion-submenu-parent[aria-expanded="true"] a {
+  &::before {
+    content: "\f07c";
+    font-family: FontAwesome;
+    margin-right: 1rem;
+  }
+}
+
+.multilevel-accordion-menu .is-accordion-submenu-parent[aria-expanded="false"] a {
+  &::before {
+    content: "\f07b";
+    font-family: FontAwesome;
+    margin-right: 1rem;
+  }
+}

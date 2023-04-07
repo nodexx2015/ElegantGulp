@@ -1,0 +1,10 @@
+@mixin breakpoint($bp) {
+    @media all and (max-width: $bp) {
+        @content;
+    }
+}
+@mixin breakpointMin($bp) {
+    @media all and (min-width: $bp) {
+        @content;
+    }
+}
