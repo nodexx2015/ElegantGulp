@@ -33,11 +33,6 @@
   src: url("../fonts/OpenSans-ExtraBold.ttf");
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 header {
   background: url(../img/index/head-bg.jpg) no-repeat center;
   height: 700px;
@@ -180,7 +175,7 @@ menu {
   font-family: "OpenSans Regular 400";
   text-decoration: none;
   color: white;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .active .menu-title {
@@ -547,6 +542,11 @@ footer {
 
 .foot-wrap div:last-child {
   margin: 27px 0px 0 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .txtx {
