@@ -593,7 +593,7 @@ menu {
 
     @include breakpoint(751px) {
         grid-template-columns: unset;
-        margin: 121px auto 0;
+        margin: 121px auto -4px;
     }
 }
 
@@ -670,7 +670,7 @@ menu {
 
     @include breakpoint(751px) {
         max-width: 680px;
-        margin: 0 10px;
+        margin: 1px 10px;
     }
 }
 
@@ -909,6 +909,7 @@ menu {
 
                     @include breakpoint(800px) {
                         width: 680px;
+                        height: 300px;
                     }
 
                     @include breakpoint(700px) {
@@ -928,11 +929,15 @@ menu {
 
                 @include breakpoint(751px) {
                     max-width: 680px;
+                    margin: 91px auto -10px;
+                }
+
+                @include breakpoint(700px) {
                     margin: 91px auto -5px;
                 }
 
                 @include breakpoint(576px) {
-                    margin: 40px auto 0;
+                    margin: 40px auto -5px;
                 }
             }
 

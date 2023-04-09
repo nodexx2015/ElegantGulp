@@ -648,6 +648,7 @@ body {
 @media all and (max-width: 800px) {
   .section-index .contact + h3 + div iframe {
     width: 680px;
+    height: 300px;
   }
 }
 
@@ -825,7 +826,7 @@ body {
 
   .cards {
     grid-template-columns: unset;
-    margin: 121px auto 0;
+    margin: 121px auto -4px;
   }
 
   .card .card-inner h4 {
@@ -850,7 +851,7 @@ body {
 
   .card {
     max-width: 680px;
-    margin: 0 10px;
+    margin: 1px 10px;
   }
 
   .cards > div:nth-child(2) {
@@ -935,7 +936,7 @@ body {
 
   .section-index .contact + h3 + div {
     max-width: 680px;
-    margin: 91px auto -5px;
+    margin: 91px auto -10px;
   }
 
   .section-index .contact + h3 {
@@ -1022,6 +1023,10 @@ body {
 @media all and (max-width: 700px) {
   .section-index .contact + h3 + div iframe {
     width: 550px;
+  }
+
+  .section-index .contact + h3 + div {
+    margin: 91px auto -5px;
   }
 }
 
@@ -1185,7 +1190,7 @@ body {
   }
 
   .section-index .contact + h3 + div {
-    margin: 40px auto 0;
+    margin: 40px auto -5px;
   }
 
   .section-index .contact {
