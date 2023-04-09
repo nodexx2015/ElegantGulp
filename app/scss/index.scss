@@ -581,7 +581,7 @@ menu {
 }
 
 .cards {
-    margin: 41px auto 0;
+    margin: 40px auto 0;
     display: grid;
     grid-template-columns: repeat(3, 246px);
     column-gap: 5px;
@@ -651,7 +651,7 @@ menu {
             line-height: 23px;
             letter-spacing: .06em;
             color: #021725;
-            margin: 28px 0 0;
+            margin: 29px 0 0;
 
             @include breakpoint(751px) {
                 font-size: 29px;
@@ -1019,6 +1019,11 @@ menu {
         }
     }
 
+    & a {
+        text-decoration: none;
+        color: inherit;
+    }
+
     @include breakpoint(751px) {
         max-width: 680px;
         grid-template-columns: repeat(2, 1fr);
@@ -1102,10 +1107,11 @@ menu {
 footer {
     background-color: #eeeeee;
     margin: 80px 0 0;
-    padding: 58px 0 35px;
+    padding: 36px 0 41px;
 
     @include breakpoint(751px) {
         margin: 160px 0 0;
+        padding: 58px 0 89px;
     }
 
     @include breakpoint(576px) {
@@ -1130,6 +1136,7 @@ footer {
             opacity: 0.7;
             font-size: 29px;
             line-height: 42px;
+            letter-spacing: 0.15px;
             font-family: 'OpenSans Regular 400';
             color: #323d43;
         }
@@ -1137,15 +1144,38 @@ footer {
         @include breakpoint(576px) {
             font-size: 20px;
             line-height: 20px;
+            letter-spacing: unset;
+        }
+
+        @include breakpoint(480px) {
+            font-size: 15px;
+            line-height: 15px;
         }
     }
 
     & div:first-child {
-        margin: 0 0 0 18px;
+        margin: 0 0 0 12px;
+
+        @include breakpoint(751px) {
+            margin: 0 0 0 14px;
+        }
     }
 
     & div:last-child {
-        margin: 27px 0px 0 16px;
+        margin: 0 0px 0 6px;
+
+        @include breakpoint(751px) {
+            margin: 27px 0px 0 13px;
+        }
+
+        @include breakpoint(576px) {
+            margin: 15px 0px 0 13px;
+        }
+    }
+
+    & a {
+        text-decoration: none;
+        color: inherit;
     }
 
     @include breakpoint(751px) {

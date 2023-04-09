@@ -323,7 +323,7 @@ menu {
 }
 
 .cards {
-  margin: 41px auto 0;
+  margin: 40px auto 0;
   display: grid;
   grid-template-columns: repeat(3, 246px);
   column-gap: 5px;
@@ -361,7 +361,7 @@ menu {
   line-height: 23px;
   letter-spacing: 0.06em;
   color: #021725;
-  margin: 28px 0 0;
+  margin: 29px 0 0;
 }
 
 .card__img {
@@ -477,6 +477,11 @@ menu {
   color: #505d68;
 }
 
+.inner-contact a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .location,
 .phone {
   margin-top: 29px;
@@ -518,7 +523,7 @@ menu {
 footer {
   background-color: #eeeeee;
   margin: 80px 0 0;
-  padding: 58px 0 35px;
+  padding: 36px 0 41px;
 }
 
 .foot-wrap {
@@ -537,11 +542,16 @@ footer {
 }
 
 .foot-wrap div:first-child {
-  margin: 0 0 0 18px;
+  margin: 0 0 0 12px;
 }
 
 .foot-wrap div:last-child {
-  margin: 27px 0px 0 16px;
+  margin: 0 0px 0 6px;
+}
+
+.foot-wrap a {
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
@@ -984,14 +994,24 @@ body {
 
   footer {
     margin: 160px 0 0;
+    padding: 58px 0 89px;
   }
 
   .foot-wrap div {
     opacity: 0.7;
     font-size: 29px;
     line-height: 42px;
+    letter-spacing: 0.15px;
     font-family: "OpenSans Regular 400";
     color: #323d43;
+  }
+
+  .foot-wrap div:first-child {
+    margin: 0 0 0 14px;
+  }
+
+  .foot-wrap div:last-child {
+    margin: 27px 0px 0 13px;
   }
 
   .foot-wrap {
@@ -1199,6 +1219,11 @@ body {
   .foot-wrap div {
     font-size: 20px;
     line-height: 20px;
+    letter-spacing: unset;
+  }
+
+  .foot-wrap div:last-child {
+    margin: 15px 0px 0 13px;
   }
 }
 
@@ -1263,5 +1288,10 @@ body {
 
   .inner-contact {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .foot-wrap div {
+    font-size: 15px;
+    line-height: 15px;
   }
 }
