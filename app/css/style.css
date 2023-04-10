@@ -1047,6 +1047,23 @@ body {
   .foot-wrap {
     grid-template-columns: 1fr;
   }
+
+  .about-hd {
+    background: url(../img/about/head-bg_mob.jpg) no-repeat center;
+  }
+
+  .below-about {
+    width: 60px;
+    height: 60px;
+    border-radius: 35px;
+    margin: 1076px auto 0;
+  }
+
+  .below-about span {
+    width: 13px;
+    height: 13px;
+    transform: translateY(20px) rotate(50grad);
+  }
 }
 
 @media all and (max-width: 700px) {

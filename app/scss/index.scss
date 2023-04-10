@@ -3,14 +3,15 @@ header {
     height: 700px;
     background-size: 100%;
 
+    @include breakpoint(1280px) {
+        background-size: auto;
+    }
+
     @include breakpoint(751px) {
         height: 1337px;
         background: url(../img/index/head-bg_mob.jpg) no-repeat center;
     }
 
-    @include breakpoint(1280px) {
-        background-size: auto;
-    }
 
     &>h1 {
         font-family: 'OpenSans Light 300';
@@ -68,8 +69,7 @@ header {
             height: 13px;
             border-color: #fff;
             border-style: solid;
-            border-width: 0 2px 2px 0;
-            transform: translateY(20px) rotate(50grad);
+            border-width: 0 2px 2px 0;transform: translateY(20px) rotate(50grad);
         }
 
         @include breakpoint(751px) {
