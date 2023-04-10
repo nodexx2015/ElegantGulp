@@ -34,15 +34,15 @@ function browsersync() {
     browserSync.init({
         server: {
             baseDir: "app/",
-            index: "index.html"
+            index: "about.html"
         }
     });
 }
 
     function html() {
-        return src('app/layout-index.html')
+        return src('app/layout-about.html')
             .pipe(fileinclude())
-            .pipe(concat('index.html'))//если не переименовать то layout-index.html будет как index.html
+            .pipe(concat('about.html'))//если не переименовать то layout-index.html будет как index.html
             .pipe(dest('app/'))
             .pipe(browserSync.stream())
     }
@@ -109,6 +109,7 @@ function browsersync() {
     exports.html = html;
     exports.script = script;
     exports.default = parallel(styles, browsersync, watcher, html, script); //когда запускается gulp запустит переменную по умолчанию parallel
+
 //  To upgrade to the latest gulp-sass, please do the following steps:
 //    1.Delete your node_modules folder
 //    2.Remove gulp-sass from your package.json file
@@ -118,3 +119,15 @@ function browsersync() {
 
     //npm i --save-dev name_plugin
     //npm install
+
+    
+// Transision gulpfile.js to newName.html, do the follwing steps:
+//  1. Compare menu and footer with index.html, if they are same
+//  2. Prepare img/newName/
+//  3. Rename layout-*.html files
+//      -rename references layout-name.html
+//  4. Create newName.scss
+//      -create reference into style.scss
+//  5. Remake gulpfile.js
+//      -remake html()
+//      -remake browsersync()
