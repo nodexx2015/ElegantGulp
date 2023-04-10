@@ -7,4 +7,9 @@ $(function(){
             scrollTop: $('#contact').offset().top
         }, 'slow');
     });
+    $("#down-about").on("click", function () {
+        $("html, body").animate({
+            scrollTop: $('#sevices').offset().top
+        }, 'slow');
+    });
 })
