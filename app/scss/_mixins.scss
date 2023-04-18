@@ -3,8 +3,23 @@
         @content;
     }
 }
+
 @mixin breakpointMin($bp) {
     @media all and (min-width: $bp) {
         @content;
     }
+}
+
+$maxWidth: 1170;
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 752;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 752px) / #{$maxWidth}));
+}
+
+@mixin adaptiv-line-height($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 752;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 1170px) / #{$maxWidth}));
 }

@@ -616,9 +616,9 @@ footer {
 .services__box h2 {
   font-family: "OpenSans Semibold 600";
   font-size: 45px;
-  line-height: 60px;
+  line-height: 45px;
   letter-spacing: 1.5px;
-  margin: 33px 0 0 37px;
+  margin: 6% 0 0 6%;
 }
 
 .services__text {
@@ -628,26 +628,23 @@ footer {
   letter-spacing: 0.3px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 72px;
+  margin-top: 12.8%;
 }
 
 .services__text div {
-  margin: 0 0 0 54px;
+  margin: 0 0 0 18%;
   max-width: 220px;
-  letter-spacing: 0.67px;
+  letter-spacing: 0.6px;
 }
 
 .services__text ul {
   list-style-type: none;
   padding: 0;
-  margin: 33px 0 0 50px;
-}
-
-.services__text ul li {
+  margin: 10% 0 0 15.7%;
   letter-spacing: 0.65px;
 }
 
-.services__text ul li span {
+.services__text ul span {
   position: relative;
   left: -7px;
 }
@@ -738,6 +735,19 @@ body {
 @media all and (max-width: 1200px) {
   header > h1 {
     font-size: 60px;
+  }
+}
+
+@media all and (max-width: 1170px) {
+  .services__box h2 {
+    font-size: calc(35px + 10 * (100vw - 752px) / 418);
+    line-height: calc(35px + 10 * (100vw - 752px) / 418);
+  }
+
+  .services__text {
+    margin-top: 6.8%;
+    font-size: calc(12px + 6 * (100vw - 752px) / 418);
+    line-height: calc(30px + 8 * (100vw - 1170px) / 418);
   }
 }
 

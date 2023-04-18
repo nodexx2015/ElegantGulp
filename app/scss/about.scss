@@ -92,11 +92,18 @@
     & h2 {
         font-family: 'OpenSans Semibold 600';
         font-size: 45px;
-        line-height: 60px;
+        line-height: 45px;
         letter-spacing: 1.5px;
-        margin: 33px 0 0 37px;
+        margin: 6% 0 0 6%;
+
+        @include breakpoint(1170px) {
+            font-size: calc(35px + (45 - 35) * ((100vw - 752px) / (1170 - 752)));
+            line-height: calc(35px + (45 - 35) * ((100vw - 752px) / (1170 - 752)));
+        }
     }
+
 }
+
 
 .services__text {
     font-family: 'OpenSans Light 300';
@@ -105,26 +112,29 @@
     letter-spacing: 0.3px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 72px;
+    margin-top: 12.8%;
+
+    @include breakpoint(1170px) {
+        margin-top: 6.8%;
+        font-size: calc(12px + (18 - 12) * ((100vw - 752px) / (1170 - 752)));
+        line-height: calc(30px + (30 - 22) * ((100vw - 1170px) / (1170 - 752)));
+    }
 
     & div {
-        margin: 0 0 0 54px;
+        margin: 0 0 0 18%;
         max-width: 220px;
-        letter-spacing: 0.67px;
+        letter-spacing: .6px;
     }
 
     & ul {
         list-style-type: none;
         padding: 0;
-        margin: 33px 0 0 50px;
+        margin: 10% 0 0 15.7%;
+        letter-spacing: .65px;
 
-        & li {
-            letter-spacing: .65px;
-
-            & span {
-                position: relative;
-                left: -7px;
-            }
+        & span {
+            position: relative;
+            left: -7px;
         }
     }
 }
