@@ -52,6 +52,27 @@
     line-height: 30px;
     letter-spacing: 0.63px;
     text-align: center;
+
+    @include breakpoint(751px) {
+        max-width: 690px;
+        margin: 297px auto 0;
+        padding: 0 10px;
+        font-size: 35px;
+        line-height: 46px;
+        letter-spacing: 1.78px;
+    }
+
+    @include breakpoint(576px) {
+        margin: 100px auto 0;
+        font-size: 25px;
+        line-height: 38px;
+        letter-spacing: unset;
+    }
+
+    @include breakpoint(480px) {
+        font-size: 20px;
+        line-height: 35px;
+    }
 }
 
 .services {
@@ -59,6 +80,15 @@
     max-width: 1280px;
     grid-template-columns: repeat(2, 1fr);
     margin: 152px auto -80px;
+
+    @include breakpoint(751px) {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 290px auto -77px;
+    }
+
+    @include breakpoint(576px) {
+        margin: 100px auto 0
+    }
 }
 
 .services__img {
@@ -100,6 +130,25 @@
             font-size: calc(35px + (45 - 35) * ((100vw - 752px) / (1170 - 752)));
             line-height: calc(35px + (45 - 35) * ((100vw - 752px) / (1170 - 752)));
         }
+
+        @include breakpoint(751px) {
+            font-size: 85px;
+            line-height: 85px;
+            margin: 77px 0 0 75px;
+            letter-spacing: 2.5px;
+        }
+
+        @include breakpoint(576px) {
+            font-size: 55px;
+            line-height: 55px;
+            margin: 40px 0 0 55px;
+            letter-spacing: unset;
+        }
+
+        @include breakpoint(480px) {
+            font-size: 35px;
+            line-height: 35px;
+        }
     }
 
 }
@@ -120,10 +169,36 @@
         line-height: calc(30px + (30 - 22) * ((100vw - 1170px) / (1170 - 752)));
     }
 
+    @include breakpoint(751px) {
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 34px;
+        line-height: 56px;
+    }
+
+    @include breakpoint(576px) {
+        font-size: 25px;
+        line-height: 45px;
+        margin: 35px 0 0 55px;
+    }
+
+    @include breakpoint(480px) {
+        font-size: 20px;
+        line-height: 35px;
+    }
+
     & div {
         margin: 0 0 0 18%;
         max-width: 220px;
         letter-spacing: .6px;
+
+        @include breakpoint(751px) {
+            margin: 101px 0 0 76px;
+            max-width: 565px;
+        }
+
+        @include breakpoint(576px) {
+            margin: 0;
+        }
     }
 
     & ul {
@@ -131,6 +206,16 @@
         padding: 0;
         margin: 10% 0 0 15.7%;
         letter-spacing: .65px;
+
+        @include breakpoint(751px) {
+            margin: 147px 0 0 89px;
+            letter-spacing: 1.5px;
+        }
+
+        @include breakpoint(576px) {
+            margin: 25px 0 0 25px;
+            letter-spacing: unset;
+        }
 
         & span {
             position: relative;
