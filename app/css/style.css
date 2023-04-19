@@ -698,8 +698,8 @@ footer {
 }
 
 .section-work .boxes-mob li {
-  width: 750px;
-  height: 565px;
+  max-width: 750px;
+  max-height: 565px;
 }
 
 body {
@@ -1273,6 +1273,7 @@ body {
 
   .text-work {
     margin: 59px auto 0;
+    padding: 0 10px;
     max-width: 681px;
     font-size: 29px;
     line-height: 47px;
@@ -1286,7 +1287,6 @@ body {
   .section-work .boxes-mob {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin: 221px auto 0;
   }
 }
@@ -1534,6 +1534,30 @@ body {
     margin: 25px 0 0 25px;
     letter-spacing: unset;
   }
+
+  .section-work h2 {
+    margin: 100px 0 0;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .section-work h3 {
+    margin: 25px 0 0;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .text-work {
+    margin: 40px auto 0;
+    font-size: 20px;
+    line-height: 33px;
+    letter-spacing: unset;
+  }
+
+  .section-work .boxes-mob {
+    gap: unset;
+    margin: 50px auto 0;
+  }
 }
 
 @media all and (max-width: 480px) {
@@ -1617,9 +1641,5 @@ body {
   .services__text {
     font-size: 20px;
     line-height: 35px;
-  }
-
-  .section-work .boxes-mob {
-    margin: 50px auto 0;
   }
 }
