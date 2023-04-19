@@ -1202,6 +1202,11 @@ body {
     margin: 147px 0 0 89px;
     letter-spacing: 1.5px;
   }
+
+  .work-hd {
+    background: url(../img/work/head-bg_mob.jpg) no-repeat center;
+    height: 1338px;
+  }
 }
 
 @media all and (max-width: 700px) {

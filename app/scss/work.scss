@@ -6,4 +6,9 @@
     @include breakpoint(1280px) {
         background-size: auto;
     }
+
+    @include breakpoint(751px) {
+        background: url(../img/work/head-bg_mob.jpg) no-repeat center;
+        height: 1338px;
+    }
 }
