@@ -649,6 +649,12 @@ footer {
   left: -7px;
 }
 
+.work-hd {
+  background: url(../img/work/head-bg.jpg) no-repeat center;
+  height: 400px;
+  background-size: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -728,6 +734,10 @@ body {
   }
 
   .about-hd {
+    background-size: auto;
+  }
+
+  .work-hd {
     background-size: auto;
   }
 }
