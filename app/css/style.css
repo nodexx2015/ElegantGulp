@@ -690,7 +690,7 @@ footer {
 
 .section-work .boxes {
   gap: 4px;
-  margin: 128px auto 0;
+  margin: 128px auto -75px;
 }
 
 .section-work .boxes-mob {
@@ -1287,7 +1287,7 @@ body {
   .section-work .boxes-mob {
     display: flex;
     flex-direction: column;
-    margin: 221px auto 0;
+    margin: 221px auto -155px;
   }
 }
 
@@ -1556,7 +1556,7 @@ body {
 
   .section-work .boxes-mob {
     gap: unset;
-    margin: 50px auto 0;
+    margin: 50px auto -155px;
   }
 }
 
