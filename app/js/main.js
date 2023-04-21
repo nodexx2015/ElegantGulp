@@ -12,4 +12,9 @@ $(function () {
             scrollTop: $('#services').offset().top
         }, 'slow');
     });
+    $("#down-project").on("click", function () {
+        $("html, body").animate({
+            scrollTop: $('#social').offset().top
+        }, 'slow');
+    });
 })
