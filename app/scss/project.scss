@@ -57,7 +57,7 @@
 
     @include breakpoint(751px) {
         max-width: 680px;
-        margin: 148px auto 0;
+        margin: 148px auto -128px;
         grid-template-columns: 100%;
     }
 
