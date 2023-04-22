@@ -831,7 +831,7 @@ button:hover {
 
 .social {
   max-width: 1018px;
-  margin: 104px auto 0;
+  margin: 104px auto -6.5px;
   display: grid;
   grid-template-columns: repeat(3, 249px);
   justify-content: space-between;
