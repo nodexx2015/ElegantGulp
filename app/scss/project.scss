@@ -46,3 +46,109 @@
     }
 
 }
+
+.section-project__inner {
+    max-width: 1150px;
+    margin: 83px auto 0;
+    background-color: #f9f9f9;
+    display: grid;
+    grid-template-columns: 700px 300px;
+    justify-content: space-around;
+}
+
+.section-project__box {
+    color: black;
+
+    & h1 {
+        font-family: 'OpenSans Bold 700';
+        font-size: 45px;
+        line-height: 45px;
+        margin: 80px 0 0 29px;
+    }
+}
+
+.text-project {
+    margin: 117px 0 0 27px;
+    max-width: 671px;
+    font-family: 'Cardo Regular 400';
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 1px;
+
+    & p {
+        margin: 0;
+    }
+
+    & span {
+        font-family: 'Cardo Bold 700';
+    }
+}
+
+.box-img {
+    margin: 98px 0 57px 26px;
+
+    & div {
+        margin: 0 0 15px 0;
+    }
+}
+
+.section-project__boxes {
+    margin: 64px 0 0 -28px;
+
+    & div {
+        margin: 0 0 -3px 0;
+    }
+}
+
+.box-img_mob,
+.section-project__boxes_mob {
+    display: none;
+}
+
+button {
+    width: 249px;
+    height: 58px;
+    background-color: unset;
+    border: solid 1px #a1a1a1;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(186, 183, 183);
+    }
+}
+
+.social {
+    max-width: 1018px;
+    margin: 104px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 249px);
+    justify-content: space-between;
+
+    & a {
+        width: 249px;
+        height: 57.5px;
+        font-family: 'OpenSans Light 300';
+        font-size: 15px;
+        line-height: 15px;
+        color: #c0c0c0;
+        display: inline-block;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: solid 1px #a1a1a1;
+        padding: 0 0;
+        box-sizing: border-box;
+    }
+
+    & a:nth-child(1) {
+        padding: 20px 84px;
+    }
+
+    & a:nth-child(2) {
+        padding: 20px 93px;
+    }
+
+    & a:nth-child(3) {
+        padding: 20px 88px;
+    }
+}
