@@ -817,20 +817,9 @@ footer {
   margin-top: 1px;
 }
 
-button {
-  width: 249px;
-  height: 58px;
-  background-color: unset;
-  border: solid 1px #a1a1a1;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: rgb(186, 183, 183);
-}
-
 .social {
   max-width: 1018px;
+  padding: 0 10px;
   margin: 104px auto -6.5px;
   display: grid;
   grid-template-columns: repeat(3, 249px);
@@ -851,6 +840,12 @@ button:hover {
   border: solid 1px #a1a1a1;
   padding: 0 0;
   box-sizing: border-box;
+}
+
+.social a:hover {
+  background-color: rgb(186, 183, 183);
+  color: #f9f9f9;
+  transition: all ease 0.5s;
 }
 
 .social a:nth-child(1) {
@@ -991,6 +986,14 @@ body {
 @media all and (max-width: 790px) {
   .content-post {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .social {
+    grid-template-columns: repeat(3, 235px);
+  }
+
+  .social a {
+    width: 235px;
   }
 }
 
@@ -1871,7 +1874,7 @@ body {
   }
 
   .section-project__inner {
-    margin: 100px auto 0;
+    margin: 100px auto -128px;
   }
 
   .section-project__box h1 {

@@ -62,7 +62,7 @@
     }
 
     @include breakpoint(480px) {
-        margin: 100px auto 0;
+        margin: 100px auto -128px;
     }
 
     & img {
@@ -188,24 +188,17 @@
     }
 }
 
-button {
-    width: 249px;
-    height: 58px;
-    background-color: unset;
-    border: solid 1px #a1a1a1;
-    cursor: pointer;
-
-    &:hover {
-        background-color: rgb(186, 183, 183);
-    }
-}
-
 .social {
     max-width: 1018px;
+    padding: 0 10px;
     margin: 104px auto -6.5px;
     display: grid;
     grid-template-columns: repeat(3, 249px);
     justify-content: space-between;
+
+    @include breakpoint(790px) {
+        grid-template-columns: repeat(3, 235px);
+    }
 
     @include breakpoint(751px) {
         display: none;
@@ -225,6 +218,16 @@ button {
         border: solid 1px #a1a1a1;
         padding: 0 0;
         box-sizing: border-box;
+
+        &:hover {
+            background-color: rgb(186, 183, 183);
+            color: #f9f9f9;
+            transition: all ease .5s;
+        }
+
+        @include breakpoint(790px) {
+            width: 235px;
+        }
     }
 
     & a:nth-child(1) {
