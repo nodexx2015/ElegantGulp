@@ -838,12 +838,11 @@ footer {
   text-transform: uppercase;
   text-decoration: none;
   border: solid 1px #a1a1a1;
-  padding: 0 0;
   box-sizing: border-box;
 }
 
 .social a:hover {
-  background-color: rgb(186, 183, 183);
+  background-color: #bab7b7;
   color: #f9f9f9;
   transition: all ease 0.5s;
 }
