@@ -55,6 +55,12 @@
     grid-template-columns: 61% 26%;
     justify-content: space-around;
 
+    @include breakpoint(751px) {
+        max-width: 680px;
+        margin: 148px auto 0;
+        grid-template-columns: 100%;
+    }
+
     & img {
         max-width: 100%;
     }
@@ -68,6 +74,12 @@
         font-size: 45px;
         line-height: 45px;
         margin: 80px 0 0 29px;
+
+        @include breakpoint(751px) {
+            margin: 51px 0 0 22px;
+            font-size: 95px;
+            line-height: 95px;
+        }
     }
 }
 
@@ -79,17 +91,33 @@
     line-height: 32px;
     letter-spacing: 1px;
 
+    @include breakpoint(751px) {
+        margin: 88px 0 0 30px;
+        font-size: 30px;
+        line-height: 65px;
+        letter-spacing: -.25px;
+    }
+
     & p {
         margin: 0;
     }
 
     & span {
         font-family: 'Cardo Bold 700';
+
+        @include breakpoint(751px) {
+            font-size: 30px;
+            line-height: 65px;
+        }
     }
 }
 
 .box-img {
     margin: 98px 0 57px 26px;
+
+    @include breakpoint(751px) {
+        display: none;
+    }
 
     & div {
         margin: 0 0 15px 0;
@@ -99,6 +127,10 @@
 .section-project__boxes {
     margin: 64px 0 0 -28px;
 
+    @include breakpoint(751px) {
+        display: none;
+    }
+
     & div {
         margin: 0 0 -3px 0;
     }
@@ -107,6 +139,28 @@
 .box-img_mob,
 .section-project__boxes_mob {
     display: none;
+
+    @include breakpoint(751px) {
+        max-width: 615px;
+        display: block;
+    }
+}
+
+.box-img_mob {
+    margin: 212px auto 0;
+
+    & div {
+        margin: 0 0 30px 0;
+    }
+}
+
+.section-project__boxes_mob {
+    margin: 1px auto 32px;
+
+    & div:nth-child(5),
+    & div:nth-child(6) {
+        margin-top: 1px;
+    }
 }
 
 button {
@@ -127,6 +181,10 @@ button {
     display: grid;
     grid-template-columns: repeat(3, 249px);
     justify-content: space-between;
+
+    @include breakpoint(751px) {
+        display: none;
+    }
 
     & a {
         width: 249px;
