@@ -1869,4 +1869,29 @@ body {
     font-size: 20px;
     line-height: 35px;
   }
+
+  .section-project__inner {
+    margin: 100px auto 0;
+  }
+
+  .section-project__box h1 {
+    margin: 35px 0 0 22px;
+    font-size: 55px;
+    line-height: 55px;
+  }
+
+  .text-project {
+    margin: 35px 0 0 30px;
+    font-size: 20px;
+    line-height: 38px;
+    letter-spacing: unset;
+  }
+
+  .box-img_mob {
+    margin: 100px auto 0;
+  }
+
+  .box-img_mob div {
+    margin: 0 0 5px 0;
+  }
 }
