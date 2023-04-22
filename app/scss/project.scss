@@ -19,7 +19,7 @@
     border: 2px solid white;
     border-radius: 18px;
     cursor: pointer;
-    margin: 550px auto 0;
+    margin: 562px auto 0;
     text-align: center;
 
     @include breakpoint(751px) {
@@ -52,8 +52,12 @@
     margin: 83px auto 0;
     background-color: #f9f9f9;
     display: grid;
-    grid-template-columns: 700px 300px;
+    grid-template-columns: 61% 26%;
     justify-content: space-around;
+
+    & img {
+        max-width: 100%;
+    }
 }
 
 .section-project__box {
