@@ -28,7 +28,7 @@ a {
 
 .section-blog__inner {
     display: grid;
-    grid-template-columns: 666px 300px;
+    grid-template-columns: 65% 29.3%;
     justify-content: space-between;
 }
 
@@ -38,11 +38,16 @@ a {
 }
 
 .box-post {
+    max-width: 666px;
+}
+
+.box-post {
     overflow: hidden;
     background-color: #fff;
+    padding: 0 4.95%;
 
     & h1 {
-        margin: 26px 0 0 32.5px;
+        margin: -3.5px 0 0 0px;
         letter-spacing: -.2px;
         font-family: 'OpenSans Light 300';
         font-size: 30px;
@@ -51,7 +56,7 @@ a {
     }
 
     & h4 {
-        margin: 26.5px 0 0 33px;
+        margin: 26px 0 0 0px;
         font-family: 'OpenSans Light 300';
         font-size: 15px;
         line-height: 15px;
@@ -61,11 +66,15 @@ a {
 
 .box-post__img {
     max-width: 600px;
-    margin: 30px auto 0;
+    margin: 30px 0;
+
+    & img {
+        max-width: 100%;
+    }
 }
 
 .box-post__text {
-    margin: 31.5px 0 0 33px;
+    margin: 31.5px 0 0 0px;
     max-width: 585px;
     font-family: 'Cardo Regular 400';
     font-size: 16px;
@@ -74,7 +83,7 @@ a {
 }
 
 .box-post__button {
-    margin: 64px 0 31px 33px;
+    margin: 64px 0 31px 0px;
     width: 191px;
     height: 48px;
 
@@ -93,7 +102,7 @@ a {
     & a:hover {
         color: white;
         background-color: #b5b5b5;
-        transition: all ease;
+        transition: all ease .5s;
     }
 }
 
@@ -158,6 +167,10 @@ a {
     & .section-project__boxes {
         margin: -10px 0 0 0;
     }
+
+    & img {
+        max-width: 100%;
+    }
 }
 
 .section-blog__button {
@@ -174,5 +187,11 @@ a {
         line-height: 16px;
         color: #021725;
         border: solid 1px black;
+    }
+
+    & a:hover {
+        color: white;
+        background-color: #b5b5b5;
+        transition: all ease .5s;
     }
 }
