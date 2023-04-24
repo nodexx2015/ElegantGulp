@@ -859,6 +859,12 @@ footer {
   padding: 20px 88px;
 }
 
+.blog-hd {
+  background: url(../img/blog/head-bg.jpg) no-repeat center;
+  height: 400px;
+  background-size: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
