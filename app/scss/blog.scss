@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 .blog-hd {
     background: url(../img/blog/head-bg.jpg) no-repeat center;
     height: 400px;
@@ -10,5 +14,165 @@
     @include breakpoint(751px) {
         background: none;
         height: 113px;
+    }
+}
+
+.section-blog__wrap {
+    max-width: 1150px;
+    margin: 77px auto 0;
+    box-sizing: border-box;
+    padding: 0px 4.9%;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+
+.section-blog__inner {
+    display: grid;
+    grid-template-columns: 666px 300px;
+    justify-content: space-between;
+}
+
+.box-posts,
+.side-area {
+    margin: 64px 0 0 0;
+}
+
+.box-post {
+    overflow: hidden;
+    background-color: #fff;
+
+    & h1 {
+        margin: 26px 0 0 32.5px;
+        letter-spacing: -.2px;
+        font-family: 'OpenSans Light 300';
+        font-size: 30px;
+        line-height: 30px;
+        color: black;
+    }
+
+    & h4 {
+        margin: 26.5px 0 0 33px;
+        font-family: 'OpenSans Light 300';
+        font-size: 15px;
+        line-height: 15px;
+        color: #d3b000;
+    }
+}
+
+.box-post__img {
+    max-width: 600px;
+    margin: 30px auto 0;
+}
+
+.box-post__text {
+    margin: 31.5px 0 0 33px;
+    max-width: 585px;
+    font-family: 'Cardo Regular 400';
+    font-size: 16px;
+    line-height: 25px;
+    color: #021725;
+}
+
+.box-post__button {
+    margin: 64px 0 31px 33px;
+    width: 191px;
+    height: 48px;
+
+    & a {
+        width: 191px;
+        height: 48px;
+        padding: 16px 55px;
+        display: inline-block;
+        font-family: 'OpenSans Light 300';
+        font-size: 16px;
+        line-height: 16px;
+        box-sizing: border-box;
+        border: solid 1px black;
+    }
+
+    & a:hover {
+        color: white;
+        background-color: #b5b5b5;
+        transition: all ease;
+    }
+}
+
+.box-post:last-child {
+    margin-top: 57px;
+}
+
+.rescent-posts {
+    margin: 0.9px 0 0 0;
+}
+
+.categories,
+.projects {
+    margin: 48px 0 0 0;
+}
+
+.rescent-posts,
+.categories {
+
+    & h2 {
+        margin: 0;
+        font-family: 'OpenSans Light 300';
+        font-size: 23px;
+        line-height: 23px;
+        color: #021725;
+        letter-spacing: -.16px;
+    }
+
+    & hr {
+        border: solid 3px #d3b000;
+        margin: 15px 0px 38px 0;
+    }
+
+    & div {
+        margin: 6.5px 0 0 0;
+    }
+
+    & a {
+        font-family: 'OpenSans LightItalic 300';
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: -.07px;
+    }
+}
+
+.projects {
+
+    & h2 {
+        margin: 0;
+        font-family: 'OpenSans Light 300';
+        font-size: 23px;
+        line-height: 23px;
+        color: #021725;
+        letter-spacing: -.16px;
+    }
+
+    & hr {
+        border: solid 3px #d3b000;
+        margin: 15px 0px 38px 0;
+    }
+
+    & .section-project__boxes {
+        margin: -10px 0 0 0;
+    }
+}
+
+.section-blog__button {
+    width: 240px;
+    height: 59px;
+    margin: 61px auto 65px;
+
+
+    & a {
+        display: inline-block;
+        padding: 21px 59px 21px 57px;
+        font-family: 'OpenSans Light 300';
+        font-size: 16px;
+        line-height: 16px;
+        color: #021725;
+        border: solid 1px black;
     }
 }
