@@ -954,6 +954,10 @@ body {
   .project-hd {
     background-size: auto;
   }
+
+  .blog-hd {
+    background-size: auto;
+  }
 }
 
 @media all and (max-width: 1200px) {

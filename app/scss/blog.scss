@@ -2,4 +2,8 @@
     background: url(../img/blog/head-bg.jpg) no-repeat center;
     height: 400px;
     background-size: 100%;
+
+    @include breakpoint(1280px) {
+        background-size: auto;
+    }
 }
