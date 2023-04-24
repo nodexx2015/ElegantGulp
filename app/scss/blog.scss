@@ -6,4 +6,9 @@
     @include breakpoint(1280px) {
         background-size: auto;
     }
+
+    @include breakpoint(751px) {
+        background: none;
+        height: 113px;
+    }
 }
