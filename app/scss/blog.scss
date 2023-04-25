@@ -27,8 +27,12 @@ a {
 
     @include breakpoint(751px) {
         max-width: 674px;
-        margin: 66.6px auto 0;
+        margin: 66.6px auto -11px;
         padding: 0;
+    }
+
+    @include breakpoint(576px) {
+        margin: 60px auto -90px;
     }
 }
 
@@ -181,6 +185,7 @@ a {
         line-height: 16px;
         box-sizing: border-box;
         border: solid 1px black;
+        color: #021725;
 
         @include breakpoint(751px) {
             padding: 31px 104px;
@@ -240,7 +245,7 @@ a {
 
 .categories,
 .projects {
-    margin: 48px 0 0 0;
+    margin: 57px 0 0 0;
 
     @include breakpoint(751px) {
         margin: 104.8px 0 0 0;
@@ -290,7 +295,11 @@ a {
     }
 
     & div {
-        margin: 15.5px 0 0 0;
+        margin: 15.5px 0 -9px 0;
+
+        @include breakpoint(751px) {
+            margin: 15.5px 0 0px 0;
+        }
     }
 
     & a {
