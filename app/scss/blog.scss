@@ -24,35 +24,58 @@ a {
     padding: 0px 4.9%;
     background-color: #f9f9f9;
     overflow: hidden;
+
+    @include breakpoint(751px) {
+        max-width: 674px;
+        margin: 66.6px auto 0;
+        padding: 0;
+    }
 }
 
 .section-blog__inner {
     display: grid;
     grid-template-columns: 65% 29.3%;
     justify-content: space-between;
+
+    @include breakpoint(751px) {
+        display: block;
+    }
 }
 
 .box-posts,
 .side-area {
     margin: 64px 0 0 0;
+
+    @include breakpoint(751px) {
+        margin: 0;
+    }
 }
 
 .box-post {
     max-width: 666px;
-}
-
-.box-post {
     overflow: hidden;
     background-color: #fff;
     padding: 0 4.95%;
 
+    @include breakpoint(751px) {
+        max-width: 674px;
+        padding: 0 8.65%;
+    }
+
     & h1 {
-        margin: -3.5px 0 0 0px;
+        margin: 26.5px 0 0 0px;
         letter-spacing: -.2px;
         font-family: 'OpenSans Light 300';
         font-size: 30px;
         line-height: 30px;
         color: black;
+
+        @include breakpoint(751px) {
+            margin: 34px 0 0 0px;
+            letter-spacing: -0.01px;
+            font-size: 55px;
+            line-height: 85px;
+        }
     }
 
     & h4 {
@@ -61,15 +84,36 @@ a {
         font-size: 15px;
         line-height: 15px;
         color: #d3b000;
+
+        @include breakpoint(751px) {
+            margin: 46px 0 0 0px;
+            letter-spacing: -.07px;
+            font-size: 27px;
+            line-height: 27px;
+        }
     }
 }
 
 .box-post__img {
     max-width: 600px;
-    margin: 30px 0;
+    margin: 30px 0 0;
 
     & img {
         max-width: 100%;
+    }
+
+    & img:first-child {
+        @include breakpoint(751px) {
+            display: none;
+        }
+    }
+
+    & img:last-child {
+        display: none;
+
+        @include breakpoint(751px) {
+            display: inline-block;
+        }
     }
 }
 
@@ -80,12 +124,26 @@ a {
     font-size: 16px;
     line-height: 25px;
     color: #021725;
+
+    @include breakpoint(751px) {
+        font-size: 30px;
+        line-height: 47px;
+        margin: 55px 0 0 0px;
+        letter-spacing: -0.19px;
+        max-width: 539px;
+    }
 }
 
 .box-post__button {
     margin: 64px 0 31px 0px;
     width: 191px;
     height: 48px;
+
+    @include breakpoint(751px) {
+        margin: 125.5px 0 61.5px 0px;
+        width: 360px;
+        height: 91px;
+    }
 
     & a {
         width: 191px;
@@ -97,6 +155,15 @@ a {
         line-height: 16px;
         box-sizing: border-box;
         border: solid 1px black;
+
+        @include breakpoint(751px) {
+            padding: 31px 104px;
+            letter-spacing: -.26px;
+            width: 360px;
+            height: 91px;
+            font-size: 30px;
+            line-height: 30px;
+        }
     }
 
     & a:hover {
@@ -108,6 +175,24 @@ a {
 
 .box-post:last-child {
     margin-top: 57px;
+
+    @include breakpoint(751px) {
+        margin-top: 120px;
+    }
+
+    & .box-post__img {
+        @include breakpoint(751px) {
+            margin: 59px 0 0 0;
+            ;
+        }
+    }
+}
+
+.side-area {
+    @include breakpoint(751px) {
+        margin: 174px 0 0 0;
+        padding: 0 8.65%;
+    }
 }
 
 .rescent-posts {
@@ -117,6 +202,10 @@ a {
 .categories,
 .projects {
     margin: 48px 0 0 0;
+
+    @include breakpoint(751px) {
+        margin: 104.8px 0 0 0;
+    }
 }
 
 .rescent-posts,
@@ -129,15 +218,26 @@ a {
         line-height: 23px;
         color: #021725;
         letter-spacing: -.16px;
+
+        @include breakpoint(751px) {
+            font-size: 42px;
+            line-height: 42px;
+            letter-spacing: unset;
+        }
     }
 
     & hr {
         border: solid 3px #d3b000;
         margin: 15px 0px 38px 0;
+
+        @include breakpoint(751px) {
+            border: solid 4px #d3b000;
+            margin: 27px 0px 67px 0;
+        }
     }
 
     & div {
-        margin: 6.5px 0 0 0;
+        margin: 15.5px 0 0 0;
     }
 
     & a {
@@ -145,10 +245,19 @@ a {
         font-size: 16px;
         line-height: 16px;
         letter-spacing: -.07px;
+
+        @include breakpoint(751px) {
+            font-size: 30px;
+            line-height: 30px;
+            letter-spacing: -.16px;
+        }
     }
 }
 
 .projects {
+    @include breakpoint(751px) {
+        margin: 98px 0 0 0;
+    }
 
     & h2 {
         margin: 0;
@@ -157,11 +266,22 @@ a {
         line-height: 23px;
         color: #021725;
         letter-spacing: -.16px;
+
+        @include breakpoint(751px) {
+            font-size: 42px;
+            line-height: 42px;
+            letter-spacing: unset;
+        }
     }
 
     & hr {
         border: solid 3px #d3b000;
         margin: 15px 0px 38px 0;
+
+        @include breakpoint(751px) {
+            border: solid 4px #d3b000;
+            margin: 27px 0px 59px 0;
+        }
     }
 
     & .section-project__boxes {
@@ -173,10 +293,33 @@ a {
     }
 }
 
+.section-blog__boxes_mob {
+    display: none;
+
+    @include breakpoint(751px) {
+        display: block;
+    }
+
+    &>div:nth-child(2),
+    &>div:nth-child(4) {
+        margin: -1px 0 0 0;
+    }
+
+    &>div:nth-child(3) {
+        margin: -3px 0 0 0;
+    }
+}
+
 .section-blog__button {
     width: 240px;
     height: 59px;
     margin: 61px auto 65px;
+
+    @include breakpoint(751px) {
+        margin: 76px auto 62px;
+        width: 450px;
+        height: 110px;
+    }
 
 
     & a {
@@ -187,6 +330,13 @@ a {
         line-height: 16px;
         color: #021725;
         border: solid 1px black;
+
+        @include breakpoint(751px) {
+            padding: 40px 110px 38px 109px;
+            letter-spacing: -.1px;
+            font-size: 30px;
+            line-height: 30px;
+        }
     }
 
     & a:hover {
