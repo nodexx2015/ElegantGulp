@@ -34,15 +34,15 @@ function browsersync() {
     browserSync.init({
         server: {
             baseDir: "app/",
-            index: "blog.html"
+            index: "contact.html"
         }
     });
 }
 
     function html() {
-        return src('app/layout-blog.html')
+        return src('app/layout-contact.html')
             .pipe(fileinclude())
-            .pipe(concat('blog.html'))//если не переименовать то layout-index.html будет как index.html
+            .pipe(concat('contact.html'))//если не переименовать то layout-index.html будет как index.html
             .pipe(dest('app/'))
             .pipe(browserSync.stream())
     }
