@@ -1066,6 +1066,106 @@ a {
   height: 400px;
 }
 
+.section-contact h4 {
+  margin: 121px 0 0 0;
+  text-align: center;
+  font-family: "OpenSans Semibold 600";
+  font-size: 18px;
+  line-height: 18px;
+  color: #d4af37;
+  text-transform: uppercase;
+}
+
+.section-contact h1 {
+  margin: 14px 0 0 0;
+  text-align: center;
+  font-family: "OpenSans Bold 700";
+  font-size: 44px;
+  line-height: 44px;
+  color: #021725;
+  opacity: 0.7;
+}
+
+.contact-box {
+  margin: 84.5px auto 0;
+  max-width: 768px;
+  display: grid;
+  grid-template-areas: "adress img" "text tel";
+}
+
+.contact-adress,
+.contact-tel {
+  width: 300px;
+  height: 300px;
+  color: white;
+}
+
+.contact-adress p,
+.contact-tel p {
+  margin: 40px 0 0 30px;
+  font-family: "OpenSans Regular 400";
+  font-size: 25px;
+  line-height: 32px;
+}
+
+.contact-adress {
+  background-color: #d3b000;
+}
+
+.line {
+  margin: 33px 0 0 31.6px;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+}
+
+.contact-img {
+  margin: 0 0 -5px -162px;
+}
+
+.contact-text {
+  width: 468px;
+  height: 300px;
+  background-color: #f9f9f9;
+}
+
+.contact-text p {
+  margin: 37px 0 0 45px;
+  max-width: 370px;
+  letter-spacing: -0.05px;
+  font-family: "OpenSans Light 300";
+  font-size: 20px;
+  line-height: 32px;
+  color: #323d43;
+}
+
+.contact-tel {
+  background-color: #212121;
+}
+
+.contact-tel p:last-child {
+  margin: 0 0 0 30px;
+}
+
+.contact-email {
+  margin: 77px auto 0;
+  width: 238px;
+}
+
+.contact-email a {
+  padding: 22px 58px;
+  letter-spacing: -0.35px;
+  width: 238px;
+  height: 57px;
+  box-sizing: border-box;
+  display: inline-block;
+  border: solid 1px black;
+  color: #021725;
+  font-family: "OpenSans Light 300";
+  font-size: 14px;
+  line-height: 14px;
+}
+
 body {
   margin: 0;
   padding: 0;
