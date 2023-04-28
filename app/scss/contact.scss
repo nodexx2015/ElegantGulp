@@ -2,4 +2,8 @@
     background: url(../img/contact/head-bg.jpg) no-repeat center;
     background-size: 100%;
     height: 400px;
+
+    @include breakpoint(1280px) {
+        background-size: auto;
+    }
 }

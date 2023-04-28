@@ -1159,6 +1159,10 @@ body {
   .blog-hd {
     background-size: auto;
   }
+
+  .contact-hd {
+    background-size: auto;
+  }
 }
 
 @media all and (max-width: 1200px) {
