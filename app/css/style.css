@@ -1060,6 +1060,12 @@ a {
   transition: all ease 0.5s;
 }
 
+.contact-hd {
+  background: url(../img/contact/head-bg.jpg) no-repeat center;
+  background-size: 100%;
+  height: 400px;
+}
+
 body {
   margin: 0;
   padding: 0;
