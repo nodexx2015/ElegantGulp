@@ -1878,6 +1878,11 @@ body {
     font-size: 30px;
     line-height: 30px;
   }
+
+  .contact-hd {
+    background: none;
+    height: 113px;
+  }
 }
 
 @media all and (max-width: 700px) {
