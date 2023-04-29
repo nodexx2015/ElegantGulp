@@ -1170,6 +1170,12 @@ a {
   line-height: 14px;
 }
 
+.contact-email a:hover {
+  color: white;
+  background-color: #b5b5b5;
+  transition: all ease 0.5s;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -2027,6 +2033,7 @@ body {
 
   .contact-box {
     margin: 148.2px auto 0;
+    padding: 0 10px;
     max-width: 670px;
     grid-template-columns: 1fr;
     grid-template-areas: unset;
@@ -2064,6 +2071,7 @@ body {
 
   .contact-img img:last-child {
     display: inline-block;
+    max-width: 100%;
   }
 
   .contact-text {
@@ -2083,7 +2091,7 @@ body {
     height: 373.2px;
   }
 
-  .contact-tel p:first-child {
+  .contact-tel p:nth-child(2) {
     margin: 76px 0 0 57px;
   }
 
@@ -2477,6 +2485,59 @@ body {
     font-size: 20px;
     line-height: 20px;
   }
+
+  .section-contact h4 {
+    margin: 50px 0 0 0;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .section-contact h1 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .contact-box {
+    margin: 70px auto 0;
+  }
+
+  .contact-adress p,
+  .contact-tel p {
+    letter-spacing: unset;
+    font-size: 32px;
+    line-height: 55px;
+  }
+
+  .line {
+    margin: 60px 0 0 60px;
+    width: 40px;
+    height: 4px;
+  }
+
+  .contact-text {
+    padding: 0 10px 0 0px;
+  }
+
+  .contact-text p {
+    font-size: 25px;
+    line-height: 47px;
+    margin: 60px 0 0 55px;
+    letter-spacing: unset;
+  }
+
+  .contact-email {
+    width: 226px;
+    margin: 100px auto 0;
+  }
+
+  .contact-email a {
+    padding: 22px 12px;
+    letter-spacing: unset;
+    font-size: 22px;
+    line-height: 22px;
+    width: 226px;
+    height: 56px;
+  }
 }
 
 @media all and (max-width: 480px) {
@@ -2585,5 +2646,38 @@ body {
 
   .box-img_mob div {
     margin: 0 0 5px 0;
+  }
+
+  .contact-adress,
+  .contact-tel {
+    height: 300px;
+  }
+
+  .contact-adress p,
+  .contact-tel p {
+    margin: 35px 0 0 55px;
+    font-size: 24px;
+    line-height: 50px;
+  }
+
+  .contact-text {
+    padding: 0 10px 15px 0px;
+    height: unset;
+  }
+
+  .contact-text p {
+    font-size: 20px;
+    line-height: 33px;
+    margin: 45px 0 0 40px;
+  }
+
+  .contact-tel p:nth-child(2) {
+    margin: 35px 0 0 55px;
+    word-spacing: -1px;
+  }
+
+  .contact-tel p:last-child {
+    word-spacing: -1px;
+    margin: 0 0 0 55px;
   }
 }

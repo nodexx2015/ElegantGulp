@@ -29,6 +29,12 @@
             font-size: 28px;
             line-height: 28px;
         }
+
+        @include breakpoint(576px) {
+            margin: 50px 0 0 0;
+            font-size: 22px;
+            line-height: 22px;
+        }
     }
 
     & h1 {
@@ -46,6 +52,11 @@
             font-size: 90px;
             line-height: 90px;
         }
+
+        @include breakpoint(576px) {
+            font-size: 45px;
+            line-height: 45px;
+        }
     }
 }
 
@@ -62,9 +73,14 @@
 
     @include breakpoint(751px) {
         margin: 148.2px auto 0;
+        padding: 0 10px;
         max-width: 670px;
         grid-template-columns: 1fr;
         grid-template-areas: unset;
+    }
+
+    @include breakpoint(576px) {
+        margin: 70px auto 0;
     }
 }
 
@@ -85,6 +101,10 @@
         box-sizing: border-box;
     }
 
+    @include breakpoint(480px) {
+        height: 300px;
+    }
+
     & p {
         margin: 40px 0 0 30px;
         font-family: 'OpenSans Regular 400';
@@ -96,6 +116,18 @@
             letter-spacing: .05px;
             font-size: 45px;
             line-height: 58px;
+        }
+
+        @include breakpoint(576px) {
+            letter-spacing: unset;
+            font-size: 32px;
+            line-height: 55px;
+        }
+
+        @include breakpoint(480px) {
+            margin: 35px 0 0 55px;
+            font-size: 24px;
+            line-height: 50px;
         }
     }
 }
@@ -114,6 +146,12 @@
         margin: 60.6px 0 0 60px;
         width: 56px;
         height: 5px;
+    }
+
+    @include breakpoint(576px) {
+        margin: 60px 0 0 60px;
+        width: 40px;
+        height: 4px;
     }
 }
 
@@ -144,6 +182,7 @@
 
         @include breakpoint(751px) {
             display: inline-block;
+            max-width: 100%;
         }
     }
 }
@@ -163,6 +202,15 @@
         height: 505px;
     }
 
+    @include breakpoint(576px) {
+        padding: 0 10px 0 0px;
+    }
+
+    @include breakpoint(480px) {
+        padding: 0 10px 15px 0px;
+        height: unset;
+    }
+
     & p {
         margin: 37px 0 0 45px;
         max-width: 370px;
@@ -179,6 +227,19 @@
             max-width: 500px;
             letter-spacing: -0.25px;
         }
+
+        @include breakpoint(576px) {
+            font-size: 25px;
+            line-height: 47px;
+            margin: 60px 0 0 55px;
+            letter-spacing: unset;
+        }
+
+        @include breakpoint(480px) {
+            font-size: 20px;
+            line-height: 33px;
+            margin: 45px 0 0 40px;
+        }
     }
 }
 
@@ -189,9 +250,14 @@
         height: 373.2px;
     }
 
-    & p:first-child {
+    & p:nth-child(2) {
         @include breakpoint(751px) {
             margin: 76px 0 0 57px;
+        }
+
+        @include breakpoint(480px) {
+            margin: 35px 0 0 55px;
+            word-spacing: -1px;
         }
     }
 
@@ -200,6 +266,11 @@
 
         @include breakpoint(751px) {
             margin: 0 0 0 57px;
+        }
+
+        @include breakpoint(480px) {
+            word-spacing: -1px;
+            margin: 0 0 0 55px;
         }
     }
 
@@ -217,6 +288,11 @@
     @include breakpoint(751px) {
         margin: 154px auto 0;
         width: 449px;
+    }
+
+    @include breakpoint(576px) {
+        width: 226px;
+        margin: 100px auto 0;
     }
 
     & a {
@@ -241,5 +317,20 @@
             width: 449px;
             height: 107px;
         }
+
+        @include breakpoint(576px) {
+            padding: 22px 12px;
+            letter-spacing: unset;
+            font-size: 22px;
+            line-height: 22px;
+            width: 226px;
+            height: 56px;
+        }
+    }
+
+    & a:hover {
+        color: white;
+        background-color: #b5b5b5;
+        transition: all ease .5s;
     }
 }
