@@ -2527,11 +2527,11 @@ body {
 
   .contact-email {
     width: 226px;
-    margin: 100px auto 0;
+    margin: 100px auto -80px;
   }
 
   .contact-email a {
-    padding: 22px 12px;
+    padding: 17px 12px;
     letter-spacing: unset;
     font-size: 22px;
     line-height: 22px;
