@@ -22,6 +22,13 @@
         line-height: 18px;
         color: #d4af37;
         text-transform: uppercase;
+
+        @include breakpoint(751px) {
+            font-family: 'OpenSans Regular 400';
+            margin: 123px 0 0 0;
+            font-size: 28px;
+            line-height: 28px;
+        }
     }
 
     & h1 {
@@ -32,6 +39,13 @@
         line-height: 44px;
         color: #021725;
         opacity: 0.7;
+
+        @include breakpoint(751px) {
+            font-family: 'OpenSans Semibold 600';
+            margin: 27px 0 0 0;
+            font-size: 90px;
+            line-height: 90px;
+        }
     }
 }
 
@@ -45,17 +59,30 @@
     @include breakpoint(800px) {
         max-width: 708px;
     }
+
+    @include breakpoint(751px) {
+        margin: 148.2px auto 0;
+        max-width: 670px;
+        grid-template-columns: 1fr;
+        grid-template-areas: unset;
+    }
 }
 
 .contact-adress,
 .contact-tel {
-    width: 300px;
+    max-width: 300px;
     height: 300px;
     color: white;
 
     @include breakpoint(800px) {
-        width: 270px;
+        max-width: 270px;
         height: 280.51px;
+    }
+
+    @include breakpoint(751px) {
+        max-width: 670px;
+        height: 374px;
+        box-sizing: border-box;
     }
 
     & p {
@@ -63,6 +90,13 @@
         font-family: 'OpenSans Regular 400';
         font-size: 25px;
         line-height: 32px;
+
+        @include breakpoint(751px) {
+            margin: 76px 0 0 56px;
+            letter-spacing: .05px;
+            font-size: 45px;
+            line-height: 58px;
+        }
     }
 }
 
@@ -75,6 +109,12 @@
     width: 30px;
     height: 3px;
     background-color: #fff;
+
+    @include breakpoint(751px) {
+        margin: 60.6px 0 0 60px;
+        width: 56px;
+        height: 5px;
+    }
 }
 
 .contact-img {
@@ -84,9 +124,26 @@
         margin: 0 0 -5px -162px;
     }
 
-    & img {
+    @include breakpoint(751px) {
+        margin: 0 0 -4px 0;
+    }
+
+    & img:first-child {
         @include breakpoint(800px) {
             max-width: 432px;
+        }
+
+        @include breakpoint(751px) {
+            display: none;
+            max-width: 100%;
+        }
+    }
+
+    & img:last-child {
+        display: none;
+
+        @include breakpoint(751px) {
+            display: inline-block;
         }
     }
 }
@@ -101,6 +158,11 @@
         height: 280.51px;
     }
 
+    @include breakpoint(751px) {
+        width: unset;
+        height: 505px;
+    }
+
     & p {
         margin: 37px 0 0 45px;
         max-width: 370px;
@@ -109,20 +171,53 @@
         font-size: 20px;
         line-height: 32px;
         color: #323d43;
+
+        @include breakpoint(751px) {
+            font-size: 30px;
+            line-height: 47px;
+            margin: 58px 0 0 90px;
+            max-width: 500px;
+            letter-spacing: -0.25px;
+        }
     }
 }
 
 .contact-tel {
     background-color: #212121;
 
+    @include breakpoint(751px) {
+        height: 373.2px;
+    }
+
+    & p:first-child {
+        @include breakpoint(751px) {
+            margin: 76px 0 0 57px;
+        }
+    }
+
     & p:last-child {
         margin: 0 0 0 30px;
+
+        @include breakpoint(751px) {
+            margin: 0 0 0 57px;
+        }
+    }
+
+    .line {
+        @include breakpoint(751px) {
+            margin: 59.6px 0 0 60px;
+        }
     }
 }
 
 .contact-email {
     margin: 77px auto 0;
     width: 238px;
+
+    @include breakpoint(751px) {
+        margin: 154px auto 0;
+        width: 449px;
+    }
 
     & a {
         padding: 22px 58px;
@@ -136,5 +231,15 @@
         font-family: 'OpenSans Light 300';
         font-size: 14px;
         line-height: 14px;
+
+        @include breakpoint(751px) {
+            font-family: 'OpenSans Regular 400';
+            padding: 39.9px 103px;
+            letter-spacing: -0.1px;
+            font-size: 27px;
+            line-height: 27px;
+            width: 449px;
+            height: 107px;
+        }
     }
 }

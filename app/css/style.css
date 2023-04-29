@@ -1095,7 +1095,7 @@ a {
 
 .contact-adress,
 .contact-tel {
-  width: 300px;
+  max-width: 300px;
   height: 300px;
   color: white;
 }
@@ -1121,6 +1121,10 @@ a {
 
 .contact-img {
   margin: 0 0 -5px -162px;
+}
+
+.contact-img img:last-child {
+  display: none;
 }
 
 .contact-text {
@@ -1302,7 +1306,7 @@ body {
 
   .contact-adress,
   .contact-tel {
-    width: 270px;
+    max-width: 270px;
     height: 280.51px;
   }
 
@@ -1310,7 +1314,7 @@ body {
     margin: 0 0 -5px -162px;
   }
 
-  .contact-img img {
+  .contact-img img:first-child {
     max-width: 432px;
   }
 
@@ -2005,6 +2009,105 @@ body {
   .contact-hd {
     background: none;
     height: 113px;
+  }
+
+  .section-contact h4 {
+    font-family: "OpenSans Regular 400";
+    margin: 123px 0 0 0;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .section-contact h1 {
+    font-family: "OpenSans Semibold 600";
+    margin: 27px 0 0 0;
+    font-size: 90px;
+    line-height: 90px;
+  }
+
+  .contact-box {
+    margin: 148.2px auto 0;
+    max-width: 670px;
+    grid-template-columns: 1fr;
+    grid-template-areas: unset;
+  }
+
+  .contact-adress,
+  .contact-tel {
+    max-width: 670px;
+    height: 374px;
+    box-sizing: border-box;
+  }
+
+  .contact-adress p,
+  .contact-tel p {
+    margin: 76px 0 0 56px;
+    letter-spacing: 0.05px;
+    font-size: 45px;
+    line-height: 58px;
+  }
+
+  .line {
+    margin: 60.6px 0 0 60px;
+    width: 56px;
+    height: 5px;
+  }
+
+  .contact-img {
+    margin: 0 0 -4px 0;
+  }
+
+  .contact-img img:first-child {
+    display: none;
+    max-width: 100%;
+  }
+
+  .contact-img img:last-child {
+    display: inline-block;
+  }
+
+  .contact-text {
+    width: unset;
+    height: 505px;
+  }
+
+  .contact-text p {
+    font-size: 30px;
+    line-height: 47px;
+    margin: 58px 0 0 90px;
+    max-width: 500px;
+    letter-spacing: -0.25px;
+  }
+
+  .contact-tel {
+    height: 373.2px;
+  }
+
+  .contact-tel p:first-child {
+    margin: 76px 0 0 57px;
+  }
+
+  .contact-tel p:last-child {
+    margin: 0 0 0 57px;
+  }
+
+  .contact-tel .line {
+    margin: 59.6px 0 0 60px;
+  }
+
+  .contact-email {
+    margin: 154px auto 0;
+    width: 449px;
+  }
+
+  .contact-email a {
+    font-family: "OpenSans Regular 400";
+    padding: 39.9px 103px;
+    letter-spacing: -0.1px;
+    font-size: 27px;
+    line-height: 27px;
+    width: 449px;
+    height: 107px;
   }
 }
 
