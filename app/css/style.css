@@ -1295,6 +1295,29 @@ body {
     width: 680px;
     height: 300px;
   }
+
+  .contact-box {
+    max-width: 708px;
+  }
+
+  .contact-adress,
+  .contact-tel {
+    width: 270px;
+    height: 280.51px;
+  }
+
+  .contact-img {
+    margin: 0 0 -5px -162px;
+  }
+
+  .contact-img img {
+    max-width: 432px;
+  }
+
+  .contact-text {
+    width: 438px;
+    height: 280.51px;
+  }
 }
 
 @media all and (max-width: 790px) {

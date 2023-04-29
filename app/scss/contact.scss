@@ -41,6 +41,10 @@
     display: grid;
     grid-template-areas: "adress img"
         "text tel";
+
+    @include breakpoint(800px) {
+        max-width: 708px;
+    }
 }
 
 .contact-adress,
@@ -48,6 +52,11 @@
     width: 300px;
     height: 300px;
     color: white;
+
+    @include breakpoint(800px) {
+        width: 270px;
+        height: 280.51px;
+    }
 
     & p {
         margin: 40px 0 0 30px;
@@ -70,12 +79,27 @@
 
 .contact-img {
     margin: 0 0 -5px -162px;
+
+    @include breakpoint(800px) {
+        margin: 0 0 -5px -162px;
+    }
+
+    & img {
+        @include breakpoint(800px) {
+            max-width: 432px;
+        }
+    }
 }
 
 .contact-text {
     width: 468px;
     height: 300px;
     background-color: #f9f9f9;
+
+    @include breakpoint(800px) {
+        width: 438px;
+        height: 280.51px;
+    }
 
     & p {
         margin: 37px 0 0 45px;
@@ -101,7 +125,8 @@
     width: 238px;
 
     & a {
-        padding: 22px 58px;letter-spacing: -.35px;
+        padding: 22px 58px;
+        letter-spacing: -.35px;
         width: 238px;
         height: 57px;
         box-sizing: border-box;
