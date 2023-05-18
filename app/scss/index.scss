@@ -381,19 +381,7 @@ menu {
             line-height: 55px;
         }
     }
-/**/
-    & button {
-        font-family: 'OpenSans Light 300';
-        font-size: 14px;
-        line-height: 32px;
-        letter-spacing: 0.02em;
-        color: #021725;
-        border: 1px solid #000000;
-        width: 238px;
-        height: 57px;
-        background-color: inherit;
-    }
-/**/
+
     & .who-we {
         margin: 81px 0 0;
 
@@ -420,13 +408,15 @@ menu {
     width: 238px;
     height: 57px;
     box-sizing: border-box;
+
     & a {
         background-color: inherit;
         color: #021725;
+
         &:hover {
             background-color: #999999;
             color: white;
-        transition: all ease 0.5s;
+            transition: all ease 0.5s;
         }
     }
 
@@ -450,71 +440,51 @@ menu {
     line-height: 32px;
     letter-spacing: 0.036em;
     color: #021725;
-/**/
-    &+button {
+
+    &+.section-index__button {
         margin: 41px auto 0;
 
+        & a {
+            padding: 11px 0;
+
+            @include breakpoint(751px) {
+                padding: 38px 0;
+                height: 107.5px;
+                font-size: 27px;
+                letter-spacing: .05em;
+            }
+
+            @include breakpoint(576px) {
+                padding: 21px 0;
+                height: 73.5px;
+                font-size: 20px;
+            }
+
+            @include breakpoint(480px) {
+                padding: 9px 0;
+                height: 48.5px;
+                font-size: 16px;
+            }
+        }
+
         @include breakpoint(751px) {
-            font-size: 27px;
             width: 452px;
             height: 109px;
             margin: 59px auto 0;
-            letter-spacing: .05em;
         }
 
         @include breakpoint(576px) {
-            font-size: 20px;
             width: 295px;
             height: 75px;
         }
 
         @include breakpoint(480px) {
-            font-size: 16px;
             width: 230px;
             height: 50px;
             margin: 30px auto 0;
         }
     }
-/**/
-&+.section-index__button {
-    margin: 41px auto 0;
-    & a {
-        padding: 11px 0;
-        @include breakpoint(751px) {
-            padding: 38px 0;
-            height: 107.5px;
-            font-size: 27px;
-            letter-spacing: .05em;
-        }
-        @include breakpoint(576px) {
-            padding: 21px 0;
-            height: 73.5px;
-            font-size: 20px;
-        }
-        @include breakpoint(480px) {
-            padding: 9px 0;
-            height: 48.5px;
-            font-size: 16px;
-        }
-    }
 
-    @include breakpoint(751px) {
-        width: 452px;
-        height: 109px;
-        margin: 59px auto 0;
-    }
-
-    @include breakpoint(576px) {
-        width: 295px;
-        height: 75px;
-    }
-
-    @include breakpoint(480px) {
-        width: 230px;
-        height: 50px;
-        margin: 30px auto 0;
-    }
-}
     @include breakpoint(751px) {
         font-size: 28px;
         line-height: 52px;
@@ -868,12 +838,30 @@ menu {
                 line-height: 40px;
             }
         }
-/**/
-        &>button {
+
+        &>.section-index__button {
             width: 127px;
             height: 48px;
             margin: 55px 0 0;
-            letter-spacing: unset;
+            text-align: center;
+
+            & a {
+                padding: 7px 0;
+                height: 46.5px;
+
+                @include breakpoint(751px) {
+                    padding: 29px 0;
+                    height: 90.5px;
+                    font-size: 29px;
+                    letter-spacing: unset;
+                }
+
+                @include breakpoint(576px) {
+                    padding: 7px 0;
+                    height: 48.5px;
+                    font-size: 20px;
+                }
+            }
 
             @include breakpoint(765px) {
                 margin: 30px 0 0;
@@ -882,55 +870,16 @@ menu {
             @include breakpoint(751px) {
                 width: 242px;
                 height: 92px;
-                font-size: 29px;
                 margin: 139px 2px 84px;
             }
 
             @include breakpoint(576px) {
                 width: 135px;
                 height: 50px;
-                font-size: 20px;
                 margin: 30px 2px 40px;
             }
         }
-/**/
-& > .section-index__button {
-    width: 127px;
-        height: 48px;
-    margin: 55px 0 0;
-    text-align: center;
-    & a {
-        padding: 7px 0;
-        height: 46.5px;
-        @include breakpoint(751px) {
-            padding: 29px 0;
-            height: 90.5px;
-            font-size: 29px;
-            letter-spacing: unset;
-        }
-        @include breakpoint(576px) {
-            padding: 7px 0;
-            height: 48.5px;
-            font-size: 20px;
-        }
-    }
 
-    @include breakpoint(765px) {
-        margin: 30px 0 0;
-    }
-
-    @include breakpoint(751px) {
-        width: 242px;
-        height: 92px;
-        margin: 139px 2px 84px;
-    }
-
-    @include breakpoint(576px) {
-        width: 135px;
-        height: 50px;
-        margin: 30px 2px 40px;
-    }
-}
         @include breakpoint(751px) {
             padding: 87px 77px 0;
         }
@@ -940,76 +889,52 @@ menu {
         }
 
     }
-/**/
-    &+button {
+
+    &+.section-index__button {
         margin: 84px auto 0;
+
+        & a {
+            padding: 11px 0;
+
+            @include breakpoint(751px) {
+                padding: 30px 0;
+                height: 108.5px;
+                font-size: 30px;
+                letter-spacing: unset;
+                line-height: 47px;
+            }
+
+            @include breakpoint(576px) {
+                padding: 15px 0;
+                font-size: 20px;
+                height: 73.5px;
+            }
+
+            @include breakpoint(480px) {
+                padding: 3px 0;
+                font-size: 16px;
+                height: 48.5px;
+            }
+        }
 
         @include breakpoint(751px) {
             width: 454px;
             height: 110px;
-            font-size: 30px;
             margin: 77px auto 0;
-            letter-spacing: unset;
-            line-height: 47px;
         }
 
         @include breakpoint(576px) {
-            font-size: 20px;
             width: 295px;
             height: 75px;
             margin: 50px auto 0;
         }
 
         @include breakpoint(480px) {
-            font-size: 16px;
             width: 230px;
             height: 50px;
         }
     }
-/**/
-&+.section-index__button {
-    margin: 84px auto 0;
-    & a {
-        padding: 11px 0;
 
-        @include breakpoint(751px) {
-            padding: 30px 0;
-            height: 108.5px;
-            font-size: 30px;
-            letter-spacing: unset;
-            line-height: 47px;
-        }
-    
-        @include breakpoint(576px) {
-            padding: 15px 0;
-            font-size: 20px;
-            height: 73.5px;
-        }
-    
-        @include breakpoint(480px) {
-            padding: 3px 0;
-            font-size: 16px;
-            height: 48.5px;
-        }
-    }
-
-    @include breakpoint(751px) {
-        width: 454px;
-        height: 110px;
-        margin: 77px auto 0;
-    }
-
-    @include breakpoint(576px) {
-        width: 295px;
-        height: 75px;
-        margin: 50px auto 0;
-    }
-
-    @include breakpoint(480px) {
-        width: 230px;
-        height: 50px;
-    }
-}
     @include breakpoint(790px) {
         grid-template-columns: repeat(2, 1fr);
     }

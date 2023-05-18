@@ -225,8 +225,6 @@ menu {
 
 .section-index {
   display: grid;
-  /**/
-  /**/
 }
 
 .section-index > * {
@@ -250,18 +248,6 @@ menu {
   line-height: 41px;
   letter-spacing: 0.05em;
   color: #021725;
-}
-
-.section-index button {
-  font-family: "OpenSans Light 300";
-  font-size: 14px;
-  line-height: 32px;
-  letter-spacing: 0.02em;
-  color: #021725;
-  border: 1px solid #000000;
-  width: 238px;
-  height: 57px;
-  background-color: inherit;
 }
 
 .section-index .who-we {
@@ -308,12 +294,6 @@ menu {
   line-height: 32px;
   letter-spacing: 0.036em;
   color: #021725;
-  /**/
-  /**/
-}
-
-.text + button {
-  margin: 41px auto 0;
 }
 
 .text + .section-index__button {
@@ -439,15 +419,11 @@ menu {
   display: grid;
   grid-template-columns: repeat(2, 385px);
   background-color: #f9f9f9;
-  /**/
-  /**/
 }
 
 .content-post .text-post {
   padding: 45px 38px 0;
   text-align: left;
-  /**/
-  /**/
 }
 
 .content-post .text-post > h4 {
@@ -475,13 +451,6 @@ menu {
   margin: 30px 0 0;
 }
 
-.content-post .text-post > button {
-  width: 127px;
-  height: 48px;
-  margin: 55px 0 0;
-  letter-spacing: unset;
-}
-
 .content-post .text-post > .section-index__button {
   width: 127px;
   height: 48px;
@@ -492,10 +461,6 @@ menu {
 .content-post .text-post > .section-index__button a {
   padding: 7px 0;
   height: 46.5px;
-}
-
-.content-post + button {
-  margin: 84px auto 0;
 }
 
 .content-post + .section-index__button {
@@ -1414,10 +1379,6 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .content-post .text-post > button {
-    margin: 30px 0 0;
-  }
-
   .content-post .text-post > .section-index__button {
     margin: 30px 0 0;
   }
@@ -1529,14 +1490,6 @@ body {
 
   .section-index .who-we {
     margin: 160px 0 0 4px;
-  }
-
-  .text + button {
-    font-size: 27px;
-    width: 452px;
-    height: 109px;
-    margin: 59px auto 0;
-    letter-spacing: 0.05em;
   }
 
   .text + .section-index__button a {
@@ -1666,13 +1619,6 @@ body {
     margin: 61px 0px 0;
   }
 
-  .content-post .text-post > button {
-    width: 242px;
-    height: 92px;
-    font-size: 29px;
-    margin: 139px 2px 84px;
-  }
-
   .content-post .text-post > .section-index__button a {
     padding: 29px 0;
     height: 90.5px;
@@ -1688,15 +1634,6 @@ body {
 
   .content-post .text-post {
     padding: 87px 77px 0;
-  }
-
-  .content-post + button {
-    width: 454px;
-    height: 110px;
-    font-size: 30px;
-    margin: 77px auto 0;
-    letter-spacing: unset;
-    line-height: 47px;
   }
 
   .content-post + .section-index__button a {
@@ -2306,12 +2243,6 @@ body {
     margin: 80px 0 0 0px;
   }
 
-  .text + button {
-    font-size: 20px;
-    width: 295px;
-    height: 75px;
-  }
-
   .text + .section-index__button a {
     padding: 21px 0;
     height: 73.5px;
@@ -2381,13 +2312,6 @@ body {
     margin: 30px 0px 0;
   }
 
-  .content-post .text-post > button {
-    width: 135px;
-    height: 50px;
-    font-size: 20px;
-    margin: 30px 2px 40px;
-  }
-
   .content-post .text-post > .section-index__button a {
     padding: 7px 0;
     height: 48.5px;
@@ -2402,13 +2326,6 @@ body {
 
   .content-post .text-post {
     padding: 50px 45px 0;
-  }
-
-  .content-post + button {
-    font-size: 20px;
-    width: 295px;
-    height: 75px;
-    margin: 50px auto 0;
   }
 
   .content-post + .section-index__button a {
@@ -2696,13 +2613,6 @@ body {
     line-height: 55px;
   }
 
-  .text + button {
-    font-size: 16px;
-    width: 230px;
-    height: 50px;
-    margin: 30px auto 0;
-  }
-
   .text + .section-index__button a {
     padding: 9px 0;
     height: 48.5px;
@@ -2738,12 +2648,6 @@ body {
   .content-post .text-post > div {
     font-size: 20px;
     line-height: 40px;
-  }
-
-  .content-post + button {
-    font-size: 16px;
-    width: 230px;
-    height: 50px;
   }
 
   .content-post + .section-index__button a {
